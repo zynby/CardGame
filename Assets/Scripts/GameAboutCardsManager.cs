@@ -8,4 +8,9 @@ public class GameAboutCardsManager : MonoBehaviour
     public void ClickedItemAboutCards() {
       SoundManager.Instance.PlaySound(_clickClip);
    }
+
+   public void ClickedHome() {
+      SoundManager.Instance.PlaySound(_clickClip);
+      GameManager.Instance.GoToMainMenu();
+   }
 }
