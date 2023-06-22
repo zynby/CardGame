@@ -55,4 +55,9 @@ public class MainMenuManager : MonoBehaviour
       GameManager.Instance.GoToGamePlay();
    }
 
+    public void ClickedAboutCards() {
+      SoundManager.Instance.PlaySound(_clickClip);
+      GameManager.Instance.GoToAboutCards();
+   }
+
 }
